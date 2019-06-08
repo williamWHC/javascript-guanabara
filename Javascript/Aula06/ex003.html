@@ -20,8 +20,11 @@
     <h1>Olá, Mundo!</h1>
     <p>Já me livrei da maldição!</p>
     <script>
-        var name = window.prompt('Digite seu nome ') //dispara um alerta com campo de texto
-        window.alert('É um prazer em te conhecer '+name+'!') 
+        window.alert('Por favor digite dois numeros a seguir para somar! ')
+        var n1 = Number(window.prompt('Digite um numero: ')) //para forçar tipo de dado Number.ParseInt()
+        var n2 = Number(window.prompt('Digitteo segundo: ')) //ou Number.ParseFloat()
+        var s = n1+n2
+        window.alert(`A soma de ${n1} + ${n2} eh igual a = ${s}`) 
     </script>
 </body>
 </html>

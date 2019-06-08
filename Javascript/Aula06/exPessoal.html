@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Execicio pessoal</title>
+    <style>
+        body{
+            background-color: red;
+            font: normal 28pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    var name = String(window.prompt('Qual o seu nome! '))
+    var idade = Number(window.prompt('Qual a sua idade!'))
+    var sal = (window.prompt('Qua o seu salario!'))
+    //sal.toFixed(2)
+    document.write(`Ola ${name}, sua idade é de ${idade}anos, e tem o salario de ${sal.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>
