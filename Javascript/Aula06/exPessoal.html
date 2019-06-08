@@ -13,12 +13,13 @@
     </style>
 </head>
 <body>
+    
     <script>
-    var name = String(window.prompt('Qual o seu nome! '))
+    var name = window.prompt('Qual o seu nome! ')
     var idade = Number(window.prompt('Qual a sua idade!'))
-    var sal = (window.prompt('Qua o seu salario!'))
-    //sal.toFixed(2)
-    document.write(`Ola ${name}, sua idade é de ${idade}anos, e tem o salario de ${sal.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}`)
+    var sal = Number(window.prompt('Qua o seu salario!'))
+    document.write(`Ola ${name}, sua idade é de ${idade}anos, e tem o salario de 
+        ${sal.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}`)
     </script>
 </body>
 </html>
